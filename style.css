@@ -4,16 +4,17 @@
     box-sizing: border-box;
 }
 
-html, body, .wrapper {
+html, body, .wrapper{
     height: 100% ;
 }
 
 body {
     display: grid;
     place-items: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 0 24px;
     background-image: url(/img/low-poly-grid-haikei.svg);
+    background-repeat: no-repeat;
     background-size: cover;
     font-family: "ubuntu";
     color: black;
@@ -83,6 +84,7 @@ body {
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 2px;
+    text-align: center;
     transition: all 0.375s;
 
 }
@@ -112,8 +114,9 @@ body {
 
 @media (width >= 500px){
     body {
-        padding:0;
+        padding: 0;
     }
+
     .login-card{
         margin: 0;
         width: 400px;
